@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>LOGIN</title>
+</head>
+
+<body class="bg-info">
+    <div class="container-fluid vh-100 w-100 d-flex flex-column flex-lg-row justify-content-center 
+                align-items-center">
+        <div class="headingSection col-md-10 col-lg-4 col-sm-12 d-flex flex-column
+                     text-left justify-content-center align-content-end p-5 m-5 text-left">
+            <h1 class="heading fs-1 fw-bold text-primary">Facebook</h1>
+            <p class="headingParagraph fs-4 text-secondary">Connect with friends and the world around you on Facebook.
+            </p>
+        </div>
+        <div class="logInForm border bg-white rounded col-md-10 col-lg-4 col-sm-12 mb-4 pt-5 pb-3 px-5 shadow-lg">
+            <form onsubmit="" action="">
+                <div class="emailInput mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Email address or phone number">
+                </div>
+                <div class="passwordInput mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                        onfocus="focusAndBlurOnPassword()" onblur="focusAndBlurOnPassword()"
+                        onkeypress="loginPasswordValidate()">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label fw-bold text-primary" for="exampleCheck1">Show Password</label>
+                </div>
+                <div class="passValidate ">
+                    <div id="passwordHelp" class="form-text d-none mb-3 text-danger">Password should be more than
+                        <span class="fw-bold" id="passwordHelpSpan">6 characters</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 fw-bold">Log In</button>
+                <div class="register my-4 text-center">
+                    <div id="emailHelp" class="form-text ">Forget Password?</div>
+                    <hr>
+                    <button type="button" class="btn bg-success text-white py-2 px-2 fs-6 fw-bold mt-3"><a style="color: white;" href="pages/register.html">Create new
+                        account</a></button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/javascript.js"></script>
+</body>
+
+</html>

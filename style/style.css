@@ -1,0 +1,19 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+/* heading section */
+.headingSection {
+    font-family: Helvetica, sans-serif;
+}
+
+.headingSection>.heading {
+    letter-spacing: 0.2rem;
+}
+
+/* form section  */
+
+
+.logInForm>form>.register>.btn>a {
+    text-decoration: none;
+}

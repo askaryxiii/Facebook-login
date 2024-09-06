@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>SIGNUP</title>
+</head>
+
+<body>
+    <div class="container col-md-10 col-lg-5 col-sm-12 p-0 border rounded shadow mt-5">
+        <div class="formHeading text-center bg-primary text-white py-3">
+            <h1 class="fs-3 fw-bold m-0">Create Account</h1>
+        </div>
+        <form class="row g-3 p-4 ">
+            <div class="col-md-6">
+                <label for="firstName" class="firstNameLabel form-label text-primary fw-bold">First Name :</label>
+                <input type="text" class="firstNameInput form-control" id="firstName"
+                    placeholder="Enter your first name">
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="lastNameLabel form-label text-primary fw-bold">Last Name :</label>
+                <input type="text" class="lastNameInput form-control" id="lastName" placeholder="Enter your last name">
+            </div>
+            <div class="col-6">
+                <label for="inputEmail4" class="emailLabel form-label text-primary fw-bold">Email :</label>
+                <input type="text" class="emailInput form-control" id="inputEmail4"
+                    placeholder="Enter your email address" onkeypress="emailValidation()">
+            </div>
+            <div class="col-6">
+                <label for="phoneNumber" class="numberLabel form-label text-primary fw-bold">Phone Number :</label>
+                <input type="text" class="numberInput form-control" id="phoneNumber"
+                    placeholder="Enter your phone number">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword3" class="passwordLabel form-label text-primary fw-bold">Password :</label>
+                <input type="password" class="passwordInput form-control" id="inputPassword3"
+                    placeholder="Enter your password">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="conPasswordLabel form-label text-primary fw-bold">Confirm Password
+                    :</label>
+                <input type="password" class="conPasswordInput form-control" id="inputPassword4"
+                    placeholder="Confirm your password">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword3" class="genderLabel form-label text-primary fw-bold">Gender :</label>
+                <div class="form-check">
+                    <input class="firstGenderInput form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="secondGenderInput form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="birthdayDate" class="birthdayLabel form-label text-primary fw-bold">Birthday :</label>
+                <input type="date" class="birthdayInput form-control text-primary fw-bold" id="birthdayDate">
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary fs-6 p-2" onclick="resetLabels()">Reset</button>
+                <button type="button" class="submitBtn btn btn-primary fs-6 p-2"
+                    onclick="inputsValidation()">Register</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
